@@ -34,7 +34,7 @@ header {
 }
 
 .logo img {
-    height: 80px;
+    height: 150px;
 }
 
 .header-content {
@@ -93,6 +93,7 @@ section {
 .social-link {
     display: flex;
     align-items: center;
+    gap: 20px;
 }
 
 .social-link img {
@@ -106,7 +107,7 @@ section {
     }
 
     .logo img {
-        height: 40px;
+        height: 80px;
     }
 
     .social-link img {
