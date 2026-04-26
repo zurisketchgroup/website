@@ -19,25 +19,28 @@
     box-sizing: border-box;
 }
 
-
-.jost-<uniquifier> {
-  font-family: "Jost", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: <weight>;
-  font-style: normal;
-}
-
 body {
     font-family: "Jost", sans-serif;
     font-optical-sizing: auto;
     color: var(--color-brown);
     background-color: var(--color-white);
+    font-size: 2rem;
 }
 
 /* Header */
+header {
+    text-align: center;
+    color: var(--color-blue);
+}
+
+.logo img {
+    height: 80px;
+}
+
 .header-content {
     max-width: 1200px;
     margin: 0 auto;
+    padding: 40px;
 }
 
 .logo {
@@ -47,31 +50,61 @@ body {
 
 /* Main Content */
 main {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 40px 20px;
+    text-align: center;
 }
 
 section {
-    margin-bottom: 50px;
+    padding: 40px;
 }
 
 .section-content {
-    padding: 40px;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+.next-show-section {
+    background-color: var(--color-pink);
+    color: var(--color-white);
+}
+
+.social-media-section {
+    background-color: var(--color-red);
+    color: var(--color-white);
 }
 
 /* Social Media Section */
 .social-links {
+    margin-top: 20px;
     display: flex;
     gap: 20px;
     justify-content: center;
     flex-wrap: wrap;
-    margin-top: 20px;
+}
+
+.social-link,
+.social-link:hover,
+.social-link:active,
+.social-link:visited {
+    color: var(--color-light-yellow);
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.social-link img {
+    height: 48px;
 }
 
 /* Responsive Design */
 @media (max-width: 768px) {
-    .logo {
-        font-size: 48px;
+    body {
+        font-size: 1rem;
+    }
+
+    .logo img {
+        height: 40px;
+    }
+
+    .social-link img {
+        height: 24px;
     }
 }
