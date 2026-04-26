@@ -43,11 +43,6 @@ header {
     padding: 40px;
 }
 
-.logo {
-    font-size: 60px;
-    margin-bottom: 15px;
-}
-
 /* Main Content */
 main {
     text-align: center;
@@ -104,10 +99,6 @@ section {
 @media (max-width: 768px) {
     body {
         font-size: 1rem;
-    }
-
-    .logo img {
-        height: 80px;
     }
 
     .social-link img {
