@@ -4,53 +4,28 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Zuri Sketch - English Sketch Comedy in Zurich</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <!-- Hamburger Menu Button -->
-    <button class="hamburger" id="hamburger">
-        <span></span>
-        <span></span>
-        <span></span>
-    </button>
-
-    <!-- Navigation Menu -->
-    <nav class="nav-menu" id="navMenu">
-        <ul class="nav-list">
-            <li><a href="#next-show" class="nav-link">Next Show</a></li>
-            <li><a href="#videos" class="nav-link">Videos</a></li>
-            <li><a href="#social" class="nav-link">Social Media</a></li>
-        </ul>
-    </nav>
-
     <!-- Header -->
     <header>
         <div class="header-content">
-            <div class="logo">🎭</div>
+            <div class="logo"></div>
             <h1>Zuri Sketch</h1>
+            <p>Live English Sketch Comedy Show in Zürich</p>
         </div>
     </header>
 
     <!-- Main Content -->
     <main>
         <!-- Next Show Section -->
-        <section id="next-show" class="next-show">
+        <section>
             <h2>Next Show</h2>
             <div class="section-content">
-                <p class="show-message">Back this autumn - stay tuned!</p>
-            </div>
-        </section>
-
-        <!-- Videos Section -->
-        <section id="videos" class="videos">
-            <h2>Videos</h2>
-            <div class="section-content">
-                <div class="video-container">
-                    <iframe width="100%" height="400" src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                </div>
-                <div class="video-link">
-                    <a href="http://youtube.com/@zuri.sketch" target="_blank">More videos from the past shows on our channel</a>
-                </div>
+                <p class="show-message">Back this autumn - stay tuned for the next show date!</p>
             </div>
         </section>
 
@@ -60,46 +35,14 @@
             <div class="section-content">
                 <div class="social-links">
                     <a href="https://www.instagram.com/zuri.sketch" target="_blank" class="social-link instagram">
-                        📷 Instagram
+                        Instagram
                     </a>
                     <a href="http://youtube.com/@zuri.sketch" target="_blank" class="social-link youtube">
-                        ▶️ YouTube
+                        YouTube
                     </a>
                 </div>
             </div>
         </section>
     </main>
-
-    <!-- Footer -->
-    <footer>
-    </footer>
-
-    <script>
-        const hamburger = document.getElementById('hamburger');
-        const navMenu = document.getElementById('navMenu');
-        const navLinks = document.querySelectorAll('.nav-link');
-
-        // Toggle menu on hamburger click
-        hamburger.addEventListener('click', () => {
-            hamburger.classList.toggle('active');
-            navMenu.classList.toggle('active');
-        });
-
-        // Close menu when a link is clicked
-        navLinks.forEach(link => {
-            link.addEventListener('click', () => {
-                hamburger.classList.remove('active');
-                navMenu.classList.remove('active');
-            });
-        });
-
-        // Close menu when clicking outside
-        navMenu.addEventListener('click', (e) => {
-            if (e.target === navMenu) {
-                hamburger.classList.remove('active');
-                navMenu.classList.remove('active');
-            }
-        });
-    </script>
 </body>
 </html>
